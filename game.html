@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|EB+Garamond|Euphoria+Script|Nunito" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="logotemp.jpg" />
+</head>
+
+<style>
+  c {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 500%;
+    font-weight: bold;
+  }
+  b {
+    font-family: 'EB Garamond', serif;
+    font-size: 150%;
+  }
+  p {
+    font-family: 'Cuprum', sans-serif;
+  }
+
+button.accordion {
+    background-color: #D6EAF8;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #AEB6BF;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+</style>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+<body bgcolor="C3D2D5">
+
+<title>Work Escape</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <b><button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()"><center>MENU &times;</center></button></b>
+  <a href="https://ewtechinc.github.io/workescape/home.html" class="w3-bar-item w3-button">
+    <center><i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p></center>
+  </a>
+  <a href="https://ewtechinc.github.io/workescape/game.html" class="w3-bar-item w3-button">
+    <center><i class="fa fa-gamepad w3-xxlarge"></i>
+    <p>GAME</p></center>
+  </a>
+  <a href="https://ewtechinc.github.io/workescape/aboutus.html" class="w3-bar-item w3-button">
+    <center><i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT US</p></center>
+  </a>
+  <a href="https://ewtechinc.github.io/workescape/contactus.html" class="w3-bar-item w3-button">
+    <center><i class="fa fa-address-card w3-xxlarge"></i>
+    <p>CONTACT US</p></center>
+  </a>
+</div>
+
+<div zclass="w3-main" id="main">
+
+<div class="w3-black">
+  <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <center><c>Work Escape</center></c>
+  </div>
+</div>
+
+<button class="accordion"><b>Instructions</b></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
+}
+</script>
+
+</body>
+</html>

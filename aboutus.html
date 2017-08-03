@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|EB+Garamond|Euphoria+Script|Nunito" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="logotemp.jpg" />
+</head>
+
+<style>
+  c {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 500%;
+    font-weight: bold;
+  }
+  b {
+    font-family: 'EB Garamond', serif;
+    font-size: 150%;
+  }
+  p {
+    font-family: 'Cuprum', sans-serif;
+  }
+
+</style>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+<body bgcolor="C3D2D5">
+
+<title>Work Escape</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <b><button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()"><center>MENU &times;</center></button></b>
+  <a href="https://ewtechinc.github.io/workescape/home.html" class="w3-bar-item w3-button">
+    <center><i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p></center>
+  </a>
+  <a href="https://ewtechinc.github.io/workescape/game.html" class="w3-bar-item w3-button">
+    <center><i class="fa fa-gamepad w3-xxlarge"></i>
+    <p>GAME</p></center>
+  </a>
+  <a href="https://ewtechinc.github.io/workescape/aboutus.html" class="w3-bar-item w3-button">
+    <center><i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT US</p></center>
+  </a>
+  <a href="https://ewtechinc.github.io/workescape/contactus.html" class="w3-bar-item w3-button">
+    <center><i class="fa fa-address-card w3-xxlarge"></i>
+    <p>CONTACT US</p></center>
+  </a>
+</div>
+
+<div zclass="w3-main" id="main">
+
+<div class="w3-black">
+  <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <center><c>Work Escape</center></c>
+  </div>
+</div>
+
+<div class="w3-container">
+<b>About Us</b>
+<p>Hi there! Welcome to our page! We (Ashley Hau, Cathy Kim, and Ashley Kang) are the founders of Equality Wins Tech Inc. (EWtech Inc.)
+    and the creators of Work Escape (WE). Our company, EWtech Inc., is founded on the basis of gender equality — we believe everyone in the workforce should be treated equally regardless of his or her gender. </p>
+    <p>We are a part of Girls Who Code 2017, a summer immersion program for high school girls aiming to increase the number of women in computer science
+        by teaching girls how to program and code. </p>
+    <p>During the program, we learned to code with different languages: python, HTML, CSS, robotics (Arduino C), and we were introduced to various topics such as web security and the internet.
+    At the end of the program, we had 7 days to create a final project with the information we learned over the past 5 weeks.</p>
+    <p>We decided to use this project as an opportunity to address the gender inequality and mistreatment within the workplace for both males and females. We hope that our game will raise more awareness about
+        this issue by portraying real-life scenarios of employees facing this "unconscious" gender bias. </p>
+    <p>Just like the disclaimer says, these are very specific examples of the struggles men and women face in certain workplaces. Ultimately, we need to acknowledge that gender inequality in the workforce
+        is a concurrent issue we hope would be solved in the near future.</p>
+    <p>Thank you for coming to our website, and we hope you will enjoy your time here!</p>
+<p>Sincerely,</p>
+<p>Ashley Hau,
+Cathy Kim,
+Ashley Kang</p>
+
+
+</div>
+
+</div>
+
+</body>
+</html>
