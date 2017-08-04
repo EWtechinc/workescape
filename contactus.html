@@ -26,8 +26,8 @@
     font-family: 'Cuprum', sans-serif;
   }
 
-  .contact-line {
-    background-color:#C3D2D5;
+  body {
+    background-color: #C3D2D5;
   }
 
 </style>
@@ -111,6 +111,7 @@ html {
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
+  background-color: #ffffff;
 }
 
 @media (max-width: 650px) {
@@ -153,20 +154,11 @@ html {
 .button:hover {
   background-color: #555;
 }
-
-.row{
-  background-color:#333333;
-}
-
-.column{
-  background-color:#ffffff;
-}
-
 </style>
 </head>
 <body>
 
-<b><center class="contact-line">Contact The Team</center></b>
+<b><center>Contact The Team</center></b>
 
 <div class="row">
   <div class="column">
@@ -174,7 +166,7 @@ html {
       <img src="IMG_100.jpg" alt="Ashley Hau" style="width:100%">
       <div class="container">
         <b>Ashley Hau</b>
-        <p class="title">Founder</p>
+        <p class="title">Founder, Web Design</p>
         <p> I’m interested in graphic and fashion design. </p>
         <p>ashhau@gmail.com</p>
         <!-- <p><button class="button">Contact Me!</button></p> -->
@@ -187,7 +179,7 @@ html {
       <img src="IMG_5777a.jpg" alt="Ashley Kang" style="width:100%">
       <div class="container">
         <b>Ashley Kang</b>
-        <p class="title">Founder</p>
+        <p class="title">Founder, Web Design</p>
         <p>I’m interested in video game and animation design. </p>
         <p>ashleykang483@gmail.com</p>
         <!-- <p><button class="button">Contact Me!</button></p> -->
@@ -200,7 +192,7 @@ html {
         <img src="IMG_0621a.jpg" alt="Cathy" style="width:100%">
         <div class="container">
           <b>Cathy Kim</b>
-          <p class="title">Founder</p>
+          <p class="title">Founder, Game Design</p>
           <p>I’m interested in animations and film making. </p>
           <p>cathy.seoyoung@gmail.com</p>
           <!--  <p><button class="button">Contact Me!</button></p> -->
@@ -230,7 +222,7 @@ html {
                       <p><label for="exampleInputText">Your Message</label></p>
                      <p><textarea  class="form-control" placeholder="Description"></textarea></p>
                     </div>
-                    <p><button type="submit" class="btn btn-default">Send Message</button></p>
+                    <p><form method="post" action="mailto:ashhau@gmail.com"><button type="submit" class="btn btn-default">Send Message</button></form></p>
                   </form>
 
                   <hr>
